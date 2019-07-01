@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  listing_id: 1
+  headline: MyText
+  image: MyText
+  address: MyText
+  latitude: 1.5
+  longitude: 1.5
+
+two:
+  listing_id: 1
+  headline: MyText
+  image: MyText
+  address: MyText
+  latitude: 1.5
+  longitude: 1.5
