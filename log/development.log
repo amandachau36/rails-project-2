@@ -1177,3 +1177,9 @@ Migrating to AddDomainIdToListings (20190701053859)
   [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 21]]
   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 24]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."suburb_id" = $1[0m  [["suburb_id", 11]]
+  [1m[36mSuburb Load (0.4ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."suburb_id" = $1[0m  [["suburb_id", 24]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."suburb_id" = $1[0m  [["suburb_id", 21]]
