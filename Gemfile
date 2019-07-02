@@ -56,3 +56,5 @@ gem 'pry-rails'
 gem 'knock'
 
 gem 'rack-cors'
+
+gem 'httparty'
