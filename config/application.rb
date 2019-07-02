@@ -22,6 +22,7 @@ module RailsProject2
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+    #this will allow GET, POST or OPTIONS requests from any origin on any resource.
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
