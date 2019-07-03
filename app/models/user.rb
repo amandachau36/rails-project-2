@@ -9,12 +9,6 @@ class User < ApplicationRecord
   # also necessary for knock
   has_secure_password
 
-  def self.from_token_request request
-  end
-
-  def to_token_payload
-    # returns the payload as a hash
-  end
-
+  
 
 end

@@ -1,3 +1,6 @@
 class UserTokenController < Knock::AuthTokenController
-  # testing josh here
+
+  # Required for using JWT
+  skip_before_action :verify_authenticity_token
+  
 end

@@ -37,6 +37,7 @@ Temporary Items
 
 # Ignore all logfiles and tempfiles.
 /log/*
+log/*.log
 
 # ignore Rails cache files
 tmp/
