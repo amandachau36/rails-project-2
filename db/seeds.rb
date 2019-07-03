@@ -65,4 +65,10 @@ u3.listings << l1 << l2 << l3 << l4
 u4.listings << l1 << l2 << l3 << l4 << l5
 
 
+Token.destroy_all
+puts "seeding Token"
+t1 = Token.create current_token: "1"
+puts "#{Token.all.length} Token have been created"
+
+
 puts 'Finally done seeding'
