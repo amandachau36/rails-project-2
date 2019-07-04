@@ -11034,3 +11034,2723 @@ Processing by WishlistsController#index as HTML
 Completed 200 OK in 79ms (Views: 7.1ms | ActiveRecord: 68.5ms)
 
 
+Started GET "/wishlists" for ::1 at 2019-07-04 18:55:41 +1000
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 139ms (Views: 61.1ms | ActiveRecord: 13.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:44 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (31.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 175ms (Views: 0.2ms | ActiveRecord: 165.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:48 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (26.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 27.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:51 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (8.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:53 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (5.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (12.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:54 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (9.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:55:55 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-04 18:56:02 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 228ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 18:56:03 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (5.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 62ms (Views: 54.4ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:56:08 +1000
+Started DELETE "/wishlists/43" for ::1 at 2019-07-04 18:56:08 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (10.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 13ms (Views: 0.2ms | ActiveRecord: 10.8ms)
+
+
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (1.0ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 34], ["listing_id", 43]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 18:56:13 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:56:17 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:56:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 18:56:55 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 18:57:07 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015299695, "address"=>"12 Clara Street, Erskineville NSW 2043", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015299695_1_1_190523_021030-w800-h600", "headline"=>"SOLD - INSPECTION CANCELLED", "latitude"=>-33.8992198, "longitude"=>151.1884353, "wishlist"=>{"domainId"=>2015299695, "address"=>"12 Clara Street, Erskineville NSW 2043", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015299695_1_1_190523_021030-w800-h600", "headline"=>"SOLD - INSPECTION CANCELLED", "latitude"=>-33.8992198, "longitude"=>151.1884353}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."domain_id" = $1 LIMIT $2[0m  [["domain_id", 2015299695], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[36mListing Create (0.8ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "SOLD - INSPECTION CANCELLED"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015299695_1_1_190523_021030-w800-h600"], ["address", "12 Clara Street, Erskineville NSW 2043"], ["latitude", -33.8992198], ["longitude", 151.1884353], ["created_at", "2019-07-04 08:57:07.445241"], ["updated_at", "2019-07-04 08:57:07.445241"], ["domain_id", 2015299695]]
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[36mUser::HABTM_Listings Create (0.8ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 34], ["listing_id", 52]]
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 42ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 18:57:09 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:00:40 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (16.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (46.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 83ms (Views: 2.3ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:00:47 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (3.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:00:58 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 19:01:00 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2014990644, "address"=>"129 Harrington Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014990644_1_1_190305_100321-w1620-h1080", "headline"=>"SOPHISTICATED TWO BEDROOM IN COVE WITH HARBOUR VIEWS", "latitude"=>-33.8625387, "longitude"=>151.206403, "wishlist"=>{"domainId"=>2014990644, "address"=>"129 Harrington Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014990644_1_1_190305_100321-w1620-h1080", "headline"=>"SOPHISTICATED TWO BEDROOM IN COVE WITH HARBOUR VIEWS", "latitude"=>-33.8625387, "longitude"=>151.206403}}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (4.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."domain_id" = $1 LIMIT $2[0m  [["domain_id", 2014990644], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "SOPHISTICATED TWO BEDROOM IN COVE WITH HARBOUR VIEWS"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2014990644_1_1_190305_100321-w1620-h1080"], ["address", "129 Harrington Street, Sydney NSW 2000"], ["latitude", -33.8625387], ["longitude", 151.206403], ["created_at", "2019-07-04 09:01:00.649140"], ["updated_at", "2019-07-04 09:01:00.649140"], ["domain_id", 2014990644]]
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 34], ["listing_id", 53]]
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 34ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:01:01 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 17ms (Views: 5.6ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:01:06 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:01:12 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:02:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:02:52 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:02:54 +1000
+Started DELETE "/wishlists/52" for ::1 at 2019-07-04 19:02:54 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 34], ["listing_id", 52]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 10ms (Views: 1.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:02:59 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:05:53 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (38.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 63ms (Views: 20.9ms | ActiveRecord: 38.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:06:01 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:06:03 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (19.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 25ms (Views: 2.5ms | ActiveRecord: 19.7ms)
+
+
+Started DELETE "/wishlists/53" for ::1 at 2019-07-04 19:06:05 +1000
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 34], ["listing_id", 53]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 11ms (Views: 1.2ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:07:40 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:06 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:19 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (14.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (17.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 33ms (Views: 0.2ms | ActiveRecord: 31.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:24 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (10.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (14.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 24.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:37 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 19:08:40 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015405989, "address"=>"6 Hawken Street, Newtown NSW 2042", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015405989_1_1_190628_035842-w4500-h3000", "headline"=>"A bit of country in the 'heart of the city'", "latitude"=>-33.9047762, "longitude"=>151.1755361, "wishlist"=>{"domainId"=>2015405989, "address"=>"6 Hawken Street, Newtown NSW 2042", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015405989_1_1_190628_035842-w4500-h3000", "headline"=>"A bit of country in the 'heart of the city'", "latitude"=>-33.9047762, "longitude"=>151.1755361}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."domain_id" = $1 LIMIT $2[0m  [["domain_id", 2015405989], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:7
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[36mListing Create (0.7ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "A bit of country in the 'heart of the city'"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015405989_1_1_190628_035842-w4500-h3000"], ["address", "6 Hawken Street, Newtown NSW 2042"], ["latitude", -33.9047762], ["longitude", 151.1755361], ["created_at", "2019-07-04 09:08:40.971546"], ["updated_at", "2019-07-04 09:08:40.971546"], ["domain_id", 2015405989]]
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[36mUser::HABTM_Listings Create (0.6ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 34], ["listing_id", 54]]
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 19ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:08:42 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 8ms (Views: 3.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:44 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:08:46 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:08:47 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ddcd3f780131e47d7367a7402a2664dd'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:08:48 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 7ms (Views: 3.6ms | ActiveRecord: 1.3ms)
+
+
+Started DELETE "/wishlists/54" for ::1 at 2019-07-04 19:08:49 +1000
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"54"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 54], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 34], ["listing_id", 54]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (6.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 14ms (Views: 1.1ms | ActiveRecord: 8.0ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joshparry/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.7ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 33]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:9
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 34]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 34]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 35]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 35]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 36]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 36]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ie@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Isla Eve"], ["email", "ie@ga.co"], ["password_digest", "$2a$12$taIyZGGZDM1AxP6o8fqoN.AmLxM32kjXby.5TM63ZyOzEGYMPplo."], ["created_at", "2019-07-04 09:10:16.916925"], ["updated_at", "2019-07-04 09:10:16.916925"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tim Code"], ["email", "tc@ga.co"], ["password_digest", "$2a$12$zYPh92oYa1/yXRYLzPeB3.mPbt/5LCCY0CTx4owCI9RyDrhqAke/i"], ["created_at", "2019-07-04 09:10:17.136012"], ["updated_at", "2019-07-04 09:10:17.136012"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sw@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sara Wu"], ["email", "sw@ga.co"], ["password_digest", "$2a$12$nGGU3D3gTzWx3MTSDFYj2.1Ur9fG35epPF5hRYui9S03RKpuNFaZC"], ["created_at", "2019-07-04 09:10:17.349140"], ["updated_at", "2019-07-04 09:10:17.349140"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leonardo Costa"], ["email", "lc@ga.co"], ["password_digest", "$2a$12$xixBo0YGDmRHg28IvlDdGOF9z4ZpCKS.WQq0yrGHCRwKbM6PcSKDG"], ["created_at", "2019-07-04 09:10:17.568570"], ["updated_at", "2019-07-04 09:10:17.568570"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mSuburb Load (0.6ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.2ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 41]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.3ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 42]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.2ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.2ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.2ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mSuburb Create (1.2ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Newtown"], ["created_at", "2019-07-04 09:10:17.588240"], ["updated_at", "2019-07-04 09:10:17.588240"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Enmore"], ["created_at", "2019-07-04 09:10:17.591205"], ["updated_at", "2019-07-04 09:10:17.591205"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Erskineville"], ["created_at", "2019-07-04 09:10:17.593197"], ["updated_at", "2019-07-04 09:10:17.593197"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mSuburb Create (0.2ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Woolloomooloo"], ["created_at", "2019-07-04 09:10:17.595181"], ["updated_at", "2019-07-04 09:10:17.595181"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Potts Point"], ["created_at", "2019-07-04 09:10:17.597009"], ["updated_at", "2019-07-04 09:10:17.597009"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Load (0.2ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:30
+  [1m[36mComment Load (1.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (1.0ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Great vegan options"], ["user_id", 37], ["suburb_id", 46], ["created_at", "2019-07-04 09:10:17.630873"], ["updated_at", "2019-07-04 09:10:17.630873"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Quick walk to Newtown but quieter and cheaper"], ["user_id", 37], ["suburb_id", 48], ["created_at", "2019-07-04 09:10:17.634250"], ["updated_at", "2019-07-04 09:10:17.634250"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lively nightlife"], ["user_id", 38], ["suburb_id", 46], ["created_at", "2019-07-04 09:10:17.636766"], ["updated_at", "2019-07-04 09:10:17.636766"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lovely community gardens. Would highly recommend for young families"], ["user_id", 39], ["suburb_id", 48], ["created_at", "2019-07-04 09:10:17.639523"], ["updated_at", "2019-07-04 09:10:17.639523"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Being able to park my yacht in infront my home, means that I get to spend more time on my yacht"], ["user_id", 39], ["suburb_id", 49], ["created_at", "2019-07-04 09:10:17.641950"], ["updated_at", "2019-07-04 09:10:17.641950"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Awesome nightlife and multicultural eateries"], ["user_id", 40], ["suburb_id", 50], ["created_at", "2019-07-04 09:10:17.644274"], ["updated_at", "2019-07-04 09:10:17.644274"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 43]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 43]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 44]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 44]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 45]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 45]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 46]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 47]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 48]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 48]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 49]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 50]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 51]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 51]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 52]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 52]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 53]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 53]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 54]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 54]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Luxuriously large terrace promising remarkably tranquil Inner City living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045"], ["address", "Terrace 7/157 St Johns Road, Glebe"], ["latitude", -33.88231], ["longitude", 151.18335], ["created_at", "2019-07-04 09:10:17.683416"], ["updated_at", "2019-07-04 09:10:17.683416"], ["domain_id", 2015397760]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Flawless executive design, extraordinary indoor and outdoor living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015324886_1_1_190604_121715-w5189-h3890"], ["address", "96 Hereford Street, Glebe"], ["latitude", -33.8805351], ["longitude", 151.182358], ["created_at", "2019-07-04 09:10:17.685415"], ["updated_at", "2019-07-04 09:10:17.685415"], ["domain_id", 2015324886]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Two Dwellings, Double Income Opportunity"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015297723_2_pi_190522_062426-w1024-h683"], ["address", "287 Broadway, Glebe"], ["latitude", -33.8845177], ["longitude", 151.192062], ["created_at", "2019-07-04 09:10:17.687542"], ["updated_at", "2019-07-04 09:10:17.687542"], ["domain_id", 2015297723]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "A CITYSIDE TREASURE WITH CAPTIVATING VIEWS"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015029918_1_1_190321_122835-w3000-h2000"], ["address", "29 Avona Avenue, Glebe"], ["latitude", -33.8744965], ["longitude", 151.18457], ["created_at", "2019-07-04 09:10:17.689440"], ["updated_at", "2019-07-04 09:10:17.689440"], ["domain_id", 2015029918]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Create (0.2ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Modern Architectural Terrace Home In Best Location, Close to Everything You Need"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2014551371_16_pi_180810_075553-w2400-h1601"], ["address", "T24 Wentworth Street, Glebe"], ["latitude", -33.8797646], ["longitude", 151.192871], ["created_at", "2019-07-04 09:10:17.691228"], ["updated_at", "2019-07-04 09:10:17.691228"], ["domain_id", 2014551371]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 55]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 56]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 38], ["listing_id", 55]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 38], ["listing_id", 56]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 38], ["listing_id", 57]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 39], ["listing_id", 55]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 39], ["listing_id", 56]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 39], ["listing_id", 57]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 39], ["listing_id", 58]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 55]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 56]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 57]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 58]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 59]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mToken Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tokens" WHERE "tokens"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Create (3.3ms)[0m  [1m[32mINSERT INTO "tokens" ("current_token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["current_token", "1"], ["created_at", "2019-07-04 09:10:17.741848"], ["updated_at", "2019-07-04 09:10:17.741848"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:71
+Started GET "/wishlists" for ::1 at 2019-07-04 19:10:39 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:10:50 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 306ms (Views: 0.5ms | ActiveRecord: 4.6ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-04 19:11:20 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 217ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:11:20 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:11:27 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:11:57 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:12:43 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:15:25 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (15.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 28ms (Views: 1.3ms | ActiveRecord: 16.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:18:01 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:19:48 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 12ms (Views: 7.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:19:51 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (8.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (6.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 14.0ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-04 19:20:00 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 215ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:20:01 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 38], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 38]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:20:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (23.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 32ms (Views: 0.2ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:20:29 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:20:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-04 19:22:24 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 213ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 19:22:24 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:22:58 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (55.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 58ms (Views: 0.2ms | ActiveRecord: 55.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:33:45 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (15.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (22.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 82ms (Views: 1.6ms | ActiveRecord: 54.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 19:34:13 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (19.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (29.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 52ms (Views: 0.3ms | ActiveRecord: 48.9ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 21:45:18 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 41ms (Views: 31.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:45:22 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 13ms (Views: 0.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:17 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (43.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 50ms (Views: 1.0ms | ActiveRecord: 43.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:28 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (54.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 62ms (Views: 0.3ms | ActiveRecord: 58.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:45 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (13.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (9.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 22.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:53 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (6.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (75.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 88ms (Views: 0.2ms | ActiveRecord: 81.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:25 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (36.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (38.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 79ms (Views: 0.2ms | ActiveRecord: 74.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:41 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (14.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 20.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:59 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (7.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 16ms (Views: 0.2ms | ActiveRecord: 13.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:51:42 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (51.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (12.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 96ms (Views: 4.4ms | ActiveRecord: 63.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:52:03 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (31.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (11.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 42.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:52:35 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (19.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:52:41 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (6.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 12ms (Views: 0.2ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:54:05 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (147.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (122.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 288ms (Views: 2.1ms | ActiveRecord: 269.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:00:50 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (8.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 2.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:01:01 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:02:43 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (83.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (116.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 203ms (Views: 0.2ms | ActiveRecord: 199.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:05:09 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (52.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (34.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 106ms (Views: 2.2ms | ActiveRecord: 87.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:06:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (36.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 42ms (Views: 0.3ms | ActiveRecord: 36.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:10:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (80.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (104.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 211ms (Views: 5.3ms | ActiveRecord: 185.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:11:45 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (6.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (21.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:12:09 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (39.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 48ms (Views: 0.1ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:13:14 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (5.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (28.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 53ms (Views: 1.9ms | ActiveRecord: 33.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:13:17 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (86.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 90ms (Views: 0.9ms | ActiveRecord: 86.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:15:20 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (45.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 50ms (Views: 0.3ms | ActiveRecord: 45.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:15:55 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (7.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:16:01 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (9.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:19:27 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (53.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (29.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 101ms (Views: 1.9ms | ActiveRecord: 82.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:20:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (17.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 23ms (Views: 0.5ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:21:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (13.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:21:26 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (24.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 28ms (Views: 0.3ms | ActiveRecord: 25.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:22:15 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (41.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (14.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 60ms (Views: 0.3ms | ActiveRecord: 56.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:22:25 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:22:33 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (6.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (18.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 24.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:23:02 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (20.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:23:47 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (17.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (12.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 30.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:23:51 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:38:08 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (12.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 76ms (Views: 8.1ms | ActiveRecord: 16.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:39:26 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (10.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (23.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 41ms (Views: 2.0ms | ActiveRecord: 34.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:40:37 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (14.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 19ms (Views: 0.2ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:41:38 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (20.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 26ms (Views: 0.2ms | ActiveRecord: 22.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:47:08 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (3.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (29.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 37ms (Views: 1.0ms | ActiveRecord: 32.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:53:22 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (11.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 28ms (Views: 2.4ms | ActiveRecord: 13.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:53:54 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:55:35 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (9.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 31ms (Views: 3.0ms | ActiveRecord: 12.2ms)
+
+
+  [1m[36mUser Load (15.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (8.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2015324886], ["LIMIT", 1]]
+Started GET "/wishlists" for ::1 at 2019-07-04 23:00:36 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:30
+Completed 200 OK in 118ms (Views: 50.3ms | ActiveRecord: 34.4ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (8.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+Started GET "/domain_token" for ::1 at 2019-07-04 23:01:11 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 19ms (Views: 0.3ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 23:01:14 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547, "wishlist"=>{"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2015397760], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 11ms (ActiveRecord: 1.4ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 23:01:23 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547, "wishlist"=>{"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2015397760], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.1ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 23:01:23 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547, "wishlist"=>{"domainId"=>2015397760, "address"=>"Terrace 7/157 St Johns Road, Glebe NSW 2037", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045", "headline"=>"Luxuriously large terrace promising remarkably tranquil Inner City living", "latitude"=>-33.8823092, "longitude"=>151.1833547}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2015397760], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.2ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (4.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+Started GET "/domain_token" for ::1 at 2019-07-04 23:01:30 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:01:38 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (14.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 19.7ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 23:01:42 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2014739245, "address"=>"1302/185 Macquarie Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014739245_2_1_181029_033058-w6004-h4003", "headline"=>"Final Opportunity to Acquire a Stunning Penthouse at 185 Macquarie Street", "latitude"=>-33.8667935, "longitude"=>151.2121136, "wishlist"=>{"domainId"=>2014739245, "address"=>"1302/185 Macquarie Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014739245_2_1_181029_033058-w6004-h4003", "headline"=>"Final Opportunity to Acquire a Stunning Penthouse at 185 Macquarie Street", "latitude"=>-33.8667935, "longitude"=>151.2121136}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2014739245], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[36mListing Create (9.2ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Final Opportunity to Acquire a Stunning Penthouse at 185 Macquarie Street"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2014739245_2_1_181029_033058-w6004-h4003"], ["address", "1302/185 Macquarie Street, Sydney NSW 2000"], ["latitude", -33.8667935], ["longitude", 151.2121136], ["created_at", "2019-07-04 13:01:42.301422"], ["updated_at", "2019-07-04 13:01:42.301422"], ["domain_id", 2014739245]]
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[36mUser::HABTM_Listings Create (0.5ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 60]]
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 15.3ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 23:01:43 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2014739245, "address"=>"1302/185 Macquarie Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014739245_2_1_181029_033058-w6004-h4003", "headline"=>"Final Opportunity to Acquire a Stunning Penthouse at 185 Macquarie Street", "latitude"=>-33.8667935, "longitude"=>151.2121136, "wishlist"=>{"domainId"=>2014739245, "address"=>"1302/185 Macquarie Street, Sydney NSW 2000", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2014739245_2_1_181029_033058-w6004-h4003", "headline"=>"Final Opportunity to Acquire a Stunning Penthouse at 185 Macquarie Street", "latitude"=>-33.8667935, "longitude"=>151.2121136}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 2014739245], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 7ms (ActiveRecord: 1.0ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+Started GET "/domain_token" for ::1 at 2019-07-04 23:05:12 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:07:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:17:03 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (8.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 23ms (Views: 2.0ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:28:18 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 16ms (Views: 1.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:29:47 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:29:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (38.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 40.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:34:40 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (2.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 23ms (Views: 4.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:35:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:40:59 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (36.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (38.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 108ms (Views: 4.8ms | ActiveRecord: 74.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:44:46 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 17ms (Views: 1.5ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:46:09 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (19.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 19.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:46:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:47:59 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:52:28 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (27.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 38ms (Views: 0.4ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:53:23 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (28.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 35ms (Views: 1.0ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:54:04 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (51.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (33.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 91ms (Views: 0.2ms | ActiveRecord: 85.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:54:34 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (16.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 21ms (Views: 0.3ms | ActiveRecord: 17.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:54:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (11.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:54:41 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:56:28 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:58:07 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 10ms (Views: 1.1ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 23:58:56 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (73.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (26.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 103ms (Views: 0.2ms | ActiveRecord: 100.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:00:59 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (15.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 16.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:03:24 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (25.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (34.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 75ms (Views: 2.5ms | ActiveRecord: 59.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:07:27 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (323.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (30.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 371ms (Views: 1.8ms | ActiveRecord: 354.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:09:09 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (40.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (6.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 52ms (Views: 0.8ms | ActiveRecord: 46.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:10:25 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (27.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 56ms (Views: 2.8ms | ActiveRecord: 32.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 00:10:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (6.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 6.3ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-05 00:10:42 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>13352198, "address"=>"24 Pacific Street, Bronte NSW 2024", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/13352198_1_1_190702_123906-w1600-h1067", "headline"=>"Architectural Masterpiece With Sweeping Ocean Views - Sparkling Pool & Sauna", "latitude"=>-33.9055952, "longitude"=>151.2671375, "wishlist"=>{"domainId"=>13352198, "address"=>"24 Pacific Street, Bronte NSW 2024", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/13352198_1_1_190702_123906-w1600-h1067", "headline"=>"Architectural Masterpiece With Sweeping Ocean Views - Sparkling Pool & Sauna", "latitude"=>-33.9055952, "longitude"=>151.2671375}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (8.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 40], ["domain_id", 13352198], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[36mListing Create (1.6ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Architectural Masterpiece With Sweeping Ocean Views - Sparkling Pool & Sauna"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/13352198_1_1_190702_123906-w1600-h1067"], ["address", "24 Pacific Street, Bronte NSW 2024"], ["latitude", -33.9055952], ["longitude", 151.2671375], ["created_at", "2019-07-04 14:10:43.152964"], ["updated_at", "2019-07-04 14:10:43.152964"], ["domain_id", 13352198]]
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[36mUser::HABTM_Listings Create (0.6ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 40], ["listing_id", 61]]
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 174ms (ActiveRecord: 50.9ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 00:10:44 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ app/controllers/wishlists_controller.rb:30
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:23:45 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (30.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 68ms (Views: 2.7ms | ActiveRecord: 41.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:23:57 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (9.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'ec8a37446669fa09197ee868caaedf33'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 10.0ms)
+
+
+  [1m[35m (21.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/joshparry/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (16.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (8.9ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 37]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (4.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 37]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (2.0ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 38]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 38]]
+  ↳ db/seeds.rb:9
+  [1m[35m (15.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.6ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 39]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 39]]
+  ↳ db/seeds.rb:9
+  [1m[35m (13.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (5.0ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 40]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (10.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 40]]
+  ↳ db/seeds.rb:9
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (1.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ie@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Isla Eve"], ["email", "ie@ga.co"], ["password_digest", "$2a$12$Jj1kASDZ5QHEhtlSx3VwXue/.sovMAp/YljiwaryOKIJlT5Qr9tkq"], ["created_at", "2019-07-04 23:24:38.986474"], ["updated_at", "2019-07-04 23:24:38.986474"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tim Code"], ["email", "tc@ga.co"], ["password_digest", "$2a$12$daQ..JUIOJyJYaLD.de8neYSXTQ0ZavIO5u.1SMVIyFY2.N.WCozW"], ["created_at", "2019-07-04 23:24:39.255248"], ["updated_at", "2019-07-04 23:24:39.255248"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sw@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sara Wu"], ["email", "sw@ga.co"], ["password_digest", "$2a$12$Gga8bPhN8Etlpv2aiDrKfObehhkfZO9jciMQm2NSJ19Im69v9Qivi"], ["created_at", "2019-07-04 23:24:39.521330"], ["updated_at", "2019-07-04 23:24:39.521330"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leonardo Costa"], ["email", "lc@ga.co"], ["password_digest", "$2a$12$tatZEVxxLNUmGRhygqwW5uSaIIj5ubBEnmKGtwg.0SlWfwDopwaB2"], ["created_at", "2019-07-04 23:24:39.765654"], ["updated_at", "2019-07-04 23:24:39.765654"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mSuburb Load (0.7ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.5ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 46]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.3ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 47]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.5ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 48]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.3ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 49]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.2ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 50]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mSuburb Create (0.9ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Newtown"], ["created_at", "2019-07-04 23:24:39.790306"], ["updated_at", "2019-07-04 23:24:39.790306"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mSuburb Create (0.7ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Enmore"], ["created_at", "2019-07-04 23:24:39.792852"], ["updated_at", "2019-07-04 23:24:39.792852"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSuburb Create (0.8ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Erskineville"], ["created_at", "2019-07-04 23:24:39.796191"], ["updated_at", "2019-07-04 23:24:39.796191"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Woolloomooloo"], ["created_at", "2019-07-04 23:24:39.798802"], ["updated_at", "2019-07-04 23:24:39.798802"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Potts Point"], ["created_at", "2019-07-04 23:24:39.801686"], ["updated_at", "2019-07-04 23:24:39.801686"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Load (0.3ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:30
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (1.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 55]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.2ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Great vegan options"], ["user_id", 41], ["suburb_id", 51], ["created_at", "2019-07-04 23:24:39.839889"], ["updated_at", "2019-07-04 23:24:39.839889"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mComment Create (0.6ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Quick walk to Newtown but quieter and cheaper"], ["user_id", 41], ["suburb_id", 53], ["created_at", "2019-07-04 23:24:39.842275"], ["updated_at", "2019-07-04 23:24:39.842275"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lively nightlife"], ["user_id", 42], ["suburb_id", 51], ["created_at", "2019-07-04 23:24:39.845619"], ["updated_at", "2019-07-04 23:24:39.845619"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lovely community gardens. Would highly recommend for young families"], ["user_id", 43], ["suburb_id", 53], ["created_at", "2019-07-04 23:24:39.848476"], ["updated_at", "2019-07-04 23:24:39.848476"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Being able to park my yacht in infront my home, means that I get to spend more time on my yacht"], ["user_id", 43], ["suburb_id", 54], ["created_at", "2019-07-04 23:24:39.850851"], ["updated_at", "2019-07-04 23:24:39.850851"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Awesome nightlife and multicultural eateries"], ["user_id", 44], ["suburb_id", 55], ["created_at", "2019-07-04 23:24:39.852936"], ["updated_at", "2019-07-04 23:24:39.852936"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 60]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 60]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 61]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 61]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 55]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 55]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.6ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 56]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 56]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 57]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 57]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 58]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 58]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 59]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 59]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Luxuriously large terrace promising remarkably tranquil Inner City living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045"], ["address", "Terrace 7/157 St Johns Road, Glebe"], ["latitude", -33.88231], ["longitude", 151.18335], ["created_at", "2019-07-04 23:24:39.888484"], ["updated_at", "2019-07-04 23:24:39.888484"], ["domain_id", 2015397760]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Flawless executive design, extraordinary indoor and outdoor living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015324886_1_1_190604_121715-w5189-h3890"], ["address", "96 Hereford Street, Glebe"], ["latitude", -33.8805351], ["longitude", 151.182358], ["created_at", "2019-07-04 23:24:39.890512"], ["updated_at", "2019-07-04 23:24:39.890512"], ["domain_id", 2015324886]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mListing Create (0.6ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Two Dwellings, Double Income Opportunity"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015297723_2_pi_190522_062426-w1024-h683"], ["address", "287 Broadway, Glebe"], ["latitude", -33.8845177], ["longitude", 151.192062], ["created_at", "2019-07-04 23:24:39.892622"], ["updated_at", "2019-07-04 23:24:39.892622"], ["domain_id", 2015297723]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "A CITYSIDE TREASURE WITH CAPTIVATING VIEWS"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015029918_1_1_190321_122835-w3000-h2000"], ["address", "29 Avona Avenue, Glebe"], ["latitude", -33.8744965], ["longitude", 151.18457], ["created_at", "2019-07-04 23:24:39.895925"], ["updated_at", "2019-07-04 23:24:39.895925"], ["domain_id", 2015029918]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Modern Architectural Terrace Home In Best Location, Close to Everything You Need"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2014551371_16_pi_180810_075553-w2400-h1601"], ["address", "T24 Wentworth Street, Glebe"], ["latitude", -33.8797646], ["longitude", 151.192871], ["created_at", "2019-07-04 23:24:39.897970"], ["updated_at", "2019-07-04 23:24:39.897970"], ["domain_id", 2014551371]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.5ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 41], ["listing_id", 62]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.6ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 41], ["listing_id", 63]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 42], ["listing_id", 62]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 42], ["listing_id", 63]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 42], ["listing_id", 64]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 43], ["listing_id", 62]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 43], ["listing_id", 63]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.5ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 43], ["listing_id", 64]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 43], ["listing_id", 65]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.7ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 44], ["listing_id", 62]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 44], ["listing_id", 63]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 44], ["listing_id", 64]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 44], ["listing_id", 65]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 44], ["listing_id", 66]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mToken Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tokens" WHERE "tokens"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:68
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Create (1.6ms)[0m  [1m[32mINSERT INTO "tokens" ("current_token", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["current_token", "1"], ["created_at", "2019-07-04 23:24:39.956571"], ["updated_at", "2019-07-04 23:24:39.956571"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Load (2.1ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:71
+Started GET "/domain_token" for ::1 at 2019-07-05 09:24:44 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (15.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 178ms (Views: 0.3ms | ActiveRecord: 16.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:25:11 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (3.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (18.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 29ms (Views: 0.9ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:31:13 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 19ms (Views: 2.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:32:08 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 4.5ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-05 09:32:12 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2010891714, "address"=>"3/1 Gaerloch Avenue, Tamarama NSW 2026", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2010891714_1_1_190404_023919-w4032-h3024", "headline"=>"Spacious fully renovated apartment in a rejuvenated building-views", "latitude"=>-33.8986701, "longitude"=>151.2725695, "wishlist"=>{"domainId"=>2010891714, "address"=>"3/1 Gaerloch Avenue, Tamarama NSW 2026", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2010891714_1_1_190404_023919-w4032-h3024", "headline"=>"Spacious fully renovated apartment in a rejuvenated building-views", "latitude"=>-33.8986701, "longitude"=>151.2725695}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 09:32:14 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:32:24 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (109.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (20.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 140ms (Views: 0.3ms | ActiveRecord: 130.0ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-05 09:32:46 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"tc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 262ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 09:32:47 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (2.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 42]]
+  ↳ app/controllers/wishlists_controller.rb:30
+Completed 200 OK in 15ms (Views: 9.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:32:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:33:10 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-05 09:33:41 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>13327964, "address"=>"16 Wentworth Road, Vaucluse NSW 2030", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/13327964_1_1_190620_025126-w1600-h1200", "headline"=>"Family home with stunning harbour views", "latitude"=>-33.8578953, "longitude"=>151.272114, "wishlist"=>{"domainId"=>13327964, "address"=>"16 Wentworth Road, Vaucluse NSW 2030", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/13327964_1_1_190620_025126-w1600-h1200", "headline"=>"Family home with stunning harbour views", "latitude"=>-33.8578953, "longitude"=>151.272114}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1 AND "listings"."domain_id" = $2 LIMIT $3[0m  [["user_id", 44], ["domain_id", 13327964], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[36mListing Create (0.8ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Family home with stunning harbour views"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/13327964_1_1_190620_025126-w1600-h1200"], ["address", "16 Wentworth Road, Vaucluse NSW 2030"], ["latitude", -33.8578953], ["longitude", 151.272114], ["created_at", "2019-07-04 23:33:41.247447"], ["updated_at", "2019-07-04 23:33:41.247447"], ["domain_id", 13327964]]
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[36mUser::HABTM_Listings Create (0.5ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 42], ["listing_id", 67]]
+  ↳ app/controllers/wishlists_controller.rb:17
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:17
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 22ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 09:33:43 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 42]]
+  ↳ app/controllers/wishlists_controller.rb:30
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/wishlists/64" for ::1 at 2019-07-05 09:33:48 +1000
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"64"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ /Users/joshparry/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:39
+  [1m[36mUser::HABTM_Listings Destroy (0.8ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 42], ["listing_id", 64]]
+  ↳ app/controllers/wishlists_controller.rb:39
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:39
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 42]]
+  ↳ app/controllers/wishlists_controller.rb:42
+Completed 200 OK in 15ms (Views: 2.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:34:02 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (12.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (7.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 22ms (Views: 0.2ms | ActiveRecord: 20.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:34:33 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (26.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (7.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:34:50 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:37:57 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (128.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (11.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 187ms (Views: 2.1ms | ActiveRecord: 139.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:38:11 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (8.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 110ms (Views: 0.3ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:40:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (29.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (20.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 59ms (Views: 1.5ms | ActiveRecord: 49.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:40:30 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:41:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:41:59 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:42:10 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (30.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 35ms (Views: 0.5ms | ActiveRecord: 31.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:42:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (6.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (16.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 23.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:42:57 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:43:18 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:43:23 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (9.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (18.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 31ms (Views: 0.3ms | ActiveRecord: 27.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:43:51 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (3.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:43:58 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:46:28 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (5.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (45.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 53ms (Views: 0.3ms | ActiveRecord: 51.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:47:51 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (5.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 2.3ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:48:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (13.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (31.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 48ms (Views: 0.4ms | ActiveRecord: 44.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:48:42 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (23.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.2ms | ActiveRecord: 23.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:48:58 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:49:35 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:49:54 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:51:35 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 09:51:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (14.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '30981150386bdeb54d69873b59240c30'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 14.7ms)
+
+
