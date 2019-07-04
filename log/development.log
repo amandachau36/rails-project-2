@@ -8325,3 +8325,219 @@ Processing by TokenController#show as HTML
 Completed 200 OK in 280ms (Views: 0.8ms | ActiveRecord: 155.9ms)
 
 
+Started GET "/domain_token" for ::1 at 2019-07-04 10:00:08 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (101.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (114.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 871ms (Views: 2.1ms | ActiveRecord: 217.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:11:07 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 17ms (Views: 1.2ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:11:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:12:20 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (44.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (25.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 88ms (Views: 2.0ms | ActiveRecord: 70.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:13:05 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (2.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 7ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:13:42 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (20.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 32ms (Views: 0.8ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:13:56 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (59.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 66ms (Views: 0.4ms | ActiveRecord: 59.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:14:25 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (21.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:14:26 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:15:14 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (48.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (172.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 245ms (Views: 0.9ms | ActiveRecord: 220.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:15:23 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (29.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (16.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 48ms (Views: 0.2ms | ActiveRecord: 45.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:35:20 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 13ms (Views: 1.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:36:13 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (23.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (11.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 34.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:36:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (26.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 30ms (Views: 0.2ms | ActiveRecord: 26.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:36:52 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (11.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 14ms (Views: 0.2ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:53:27 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (30.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (4.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 89ms (Views: 3.2ms | ActiveRecord: 35.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:53:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (9.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:55:49 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (29.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 36ms (Views: 1.2ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 10:57:05 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (3.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (5.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 11:02:56 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (69.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (21.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 113ms (Views: 7.9ms | ActiveRecord: 90.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 11:05:52 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (4.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 11:22:05 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 17ms (Views: 1.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 11:22:12 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (8.9ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (21.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 29.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 11:22:18 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (21.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = 'b0ff7d57841f7d815ac0acab933a2271'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 25ms (Views: 0.9ms | ActiveRecord: 22.2ms)
+
+
