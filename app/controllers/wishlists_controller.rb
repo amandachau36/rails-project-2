@@ -4,7 +4,8 @@ class WishlistsController < ApplicationController
 
   def add
 
-    checkIfInDatabase = Listing.find_by(domain_id: params[:domainId])
+    # checkIfInDatabase = Listing.find_by(domain_id: params[:domainId])
+    checkIfInDatabase = User.last.listings.find_by(domain_id: params[:domainId])
     puts checkIfInDatabase
 
     if checkIfInDatabase.nil?
