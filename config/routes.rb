@@ -8,5 +8,7 @@ Rails.application.routes.draw do
 
   delete '/wishlists/:id' => 'wishlists#destroy'
 
+  post '/wishlists' => 'wishlists#add'
+
   # resources :wishlists
 end
