@@ -12759,3 +12759,532 @@ Completed 200 OK in 79ms (Views: 7.1ms | ActiveRecord: 68.5ms)
 >>>>>>> 898fb3b45edc1a1b48257187d40534f08c659db4
 
 
+Started GET "/domain_token" for ::1 at 2019-07-04 21:36:53 +1000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (51.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 69ms (Views: 0.5ms | ActiveRecord: 59.4ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:37:19 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 40.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:37:28 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:38:38 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/user_token" for ::1 at 2019-07-04 21:39:07 +1000
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 290ms (Views: 0.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 21:39:08 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 58ms (Views: 47.4ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:42:13 +1000
+Processing by TokenController#show as HTML
+Started DELETE "/wishlists/11" for ::1 at 2019-07-04 21:42:13 +1000
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Processing by WishlistsController#destroy as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 28], ["listing_id", 11]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 21:43:01 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:43:30 +1000
+Processing by TokenController#show as HTML
+Started DELETE "/wishlists/12" for ::1 at 2019-07-04 21:43:30 +1000
+Processing by WishlistsController#destroy as HTML
+  [1m[36mToken Load (1.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  Parameters: {"id"=>"12"}
+  ↳ app/models/token.rb:30
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mToken Update All (0.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mUser::HABTM_Listings Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1 AND "listings_users"."listing_id" = $2[0m  [["user_id", 28], ["listing_id", 12]]
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:38
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:41
+Completed 200 OK in 51ms (Views: 2.3ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 21:43:32 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:43:39 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:43:48 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:44:14 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.4ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (48.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 51ms (Views: 0.2ms | ActiveRecord: 49.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:44:27 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:44:52 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.3ms | ActiveRecord: 41.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:45:15 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:45:29 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (0.6ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:46:36 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (41.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:47:38 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (39.7ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 42ms (Views: 0.2ms | ActiveRecord: 40.0ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:23 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (41.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:29 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 41.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:48:42 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.2ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.5ms | ActiveRecord: 40.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:07 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (25.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 28ms (Views: 0.2ms | ActiveRecord: 25.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:20 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (41.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 41.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:22 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.5ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:35 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 43ms (Views: 0.2ms | ActiveRecord: 41.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:37 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.3ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 21:49:56 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (1.1ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/wishlists/" for ::1 at 2019-07-04 21:51:22 +1000
+Processing by WishlistsController#add as HTML
+  Parameters: {"domainId"=>2015003784, "address"=>"FT22/184 Forbes Street, Darlinghurst NSW 2010", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015003784_14_1_190529_111120-w4016-h3012", "headline"=>"Top Floor 'Horizon' townhouse with roof terrace", "latitude"=>-33.8756868, "longitude"=>151.2191352, "wishlist"=>{"domainId"=>2015003784, "address"=>"FT22/184 Forbes Street, Darlinghurst NSW 2010", "image"=>"https://bucket-api.domain.com.au/v1/bucket/image/2015003784_14_1_190529_111120-w4016-h3012", "headline"=>"Top Floor 'Horizon' townhouse with roof terrace", "latitude"=>-33.8756868, "longitude"=>151.2191352}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."domain_id" = $1 LIMIT $2[0m  [["domain_id", 2015003784], ["LIMIT", 1]]
+  ↳ app/controllers/wishlists_controller.rb:7
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Top Floor 'Horizon' townhouse with roof terrace"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015003784_14_1_190529_111120-w4016-h3012"], ["address", "FT22/184 Forbes Street, Darlinghurst NSW 2010"], ["latitude", -33.8756868], ["longitude", 151.2191352], ["created_at", "2019-07-04 11:51:22.424397"], ["updated_at", "2019-07-04 11:51:22.424397"], ["domain_id", 2015003784]]
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 28], ["listing_id", 16]]
+  ↳ app/controllers/wishlists_controller.rb:16
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/wishlists_controller.rb:16
+No template found for WishlistsController#add, rendering head :no_content
+Completed 204 No Content in 91ms (ActiveRecord: 46.9ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 21:51:27 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 22:29:08 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (40.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 48ms (Views: 3.9ms | ActiveRecord: 42.2ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-04 22:30:32 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ app/controllers/wishlists_controller.rb:29
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:30:44 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (1.1ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (40.8ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 45ms (Views: 0.2ms | ActiveRecord: 41.9ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:31:16 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (43.0ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 45ms (Views: 0.3ms | ActiveRecord: 43.3ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:32:18 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.8ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (41.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 45ms (Views: 0.2ms | ActiveRecord: 42.6ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-04 22:43:38 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.6ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mToken Update All (39.9ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '53ac1b29adecb3d52963b6e3d5e128de'[0m
+  ↳ app/models/token.rb:40
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 40.7ms)
+
+
+Started POST "/user" for ::1 at 2019-07-05 09:23:35 +1000
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (uninitialized constant UserController):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user" for ::1 at 2019-07-05 09:31:34 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Amanda Chau", "email"=>"ac@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Amanda Chau", "email"=>"ac@ga.co"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (42.1ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ac@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (26.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 124ms (ActiveRecord: 117.0ms)
+
+
+  [1m[36mUser Load (40.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/user" for ::1 at 2019-07-05 09:41:40 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Amanda", "email"=>"ac@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Amanda", "email"=>"ac@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ac@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (4.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Amanda"], ["email", "ac@ga.co"], ["password_digest", "$2a$12$4TARFlx6E9wSlHtGDzmY3O2949X0r9Tm00t2crp.LjQw..JuGgwSu"], ["created_at", "2019-07-04 23:41:40.920502"], ["updated_at", "2019-07-04 23:41:40.920502"]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 288ms (ActiveRecord: 16.1ms)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/user" for ::1 at 2019-07-05 09:47:24 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Amanda", "email"=>"ac@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Amanda", "email"=>"ac@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ac@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 36ms (ActiveRecord: 6.0ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/user" for ::1 at 2019-07-05 09:48:39 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Josh", "email"=>"jp@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Josh", "email"=>"jp@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jp@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 30ms (ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/user" for ::1 at 2019-07-05 09:49:06 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Josh", "email"=>"jp@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Josh", "email"=>"jp@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jp@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 32ms (ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/user" for ::1 at 2019-07-05 09:51:06 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"name"=>"Josh", "email"=>"jp@ga.co", "password"=>"[FILTERED]", "user"=>{"name"=>"Josh", "email"=>"jp@ga.co"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "jp@ga.co"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Josh"], ["email", "jp@ga.co"], ["password_digest", "$2a$12$ggrNVkDRkq04PYHfor4sB.ST9S3gHpSlFEFxXtevBAEtj0eWutinu"], ["created_at", "2019-07-04 23:51:06.451612"], ["updated_at", "2019-07-04 23:51:06.451612"]]
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 283ms (ActiveRecord: 7.5ms)
+
+
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
