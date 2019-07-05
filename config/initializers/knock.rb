@@ -56,4 +56,7 @@ Knock.setup do |config|
   ##
   ## Default:
   # config.not_found_exception_class_name = 'ActiveRecord::RecordNotFound'
+
+  config.token_secret_signature_key = -> { Rails.application.credentials.read }
+
 end
