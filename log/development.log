@@ -9809,3 +9809,800 @@ Processing by TokenController#show as HTML
 Completed 200 OK in 223ms (Views: 1.3ms | ActiveRecord: 174.3ms)
 
 
+Started GET "/domain_token" for ::1 at 2019-07-05 13:16:25 +1000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/wishlists" for ::1 at 2019-07-05 13:16:41 +1000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-07-05 13:17:09 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/domain_token" for ::1 at 2019-07-05 13:47:58 +1000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user_token" for ::1 at 2019-07-05 13:50:41 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/user_token" for ::1 at 2019-07-05 13:51:25 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.3) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.3) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7281449958242353110)[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Migrating to AddExpiryTimeToTokens (20190705002946)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (46.0ms)[0m  [1m[35mALTER TABLE "tokens" ADD "expiry_time" timestamp[0m
+  ↳ db/migrate/20190705002946_add_expiry_time_to_tokens.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190705002946"]]
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7281449958242353110)[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (49.8ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 25]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 25]]
+  ↳ db/seeds.rb:9
+  [1m[35m (35.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.6ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 26]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 27]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 28]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 29]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 30]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 31]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 31]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 32]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 32]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser::HABTM_Listings Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 33]]
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 33]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ie@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Isla Eve"], ["email", "ie@ga.co"], ["password_digest", "$2a$12$xhmmCxMAoE/98Hd0/Vns9eX0ZeOj7yuNY9RZjrE8wDE3tUZcwHVN."], ["created_at", "2019-07-05 03:52:58.216044"], ["updated_at", "2019-07-05 03:52:58.216044"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:14
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:14
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Tim Code"], ["email", "tc@ga.co"], ["password_digest", "$2a$12$nngV.fF/b48Stl78iOhg0en9yxspGOpr2Pz1u3wnqnAwr9Xc7JzIC"], ["created_at", "2019-07-05 03:52:58.476868"], ["updated_at", "2019-07-05 03:52:58.476868"]]
+  ↳ db/seeds.rb:14
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:14
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sw@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Sara Wu"], ["email", "sw@ga.co"], ["password_digest", "$2a$12$LUGNmWD5RluaUkEpNP440.VlsnCbqHzUBIqBgtcRNn4VYX48Py5xG"], ["created_at", "2019-07-05 03:52:58.733068"], ["updated_at", "2019-07-05 03:52:58.733068"]]
+  ↳ db/seeds.rb:15
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:15
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:16
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Leonardo Costa"], ["email", "lc@ga.co"], ["password_digest", "$2a$12$ymH0ZISBw0dLZhh5Vtczhe2v1/c5SUdDL3CuyTHqhtRMK/XU30786"], ["created_at", "2019-07-05 03:52:58.993252"], ["updated_at", "2019-07-05 03:52:58.993252"]]
+  ↳ db/seeds.rb:16
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:16
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:18
+  [1m[36mSuburb Load (0.6ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.4ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 26]]
+  ↳ db/seeds.rb:20
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.5ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 27]]
+  ↳ db/seeds.rb:20
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.5ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 28]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.3ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 29]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mSuburb Destroy (0.3ms)[0m  [1m[31mDELETE FROM "suburbs" WHERE "suburbs"."id" = $1[0m  [["id", 30]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mSuburb Create (0.4ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Newtown"], ["created_at", "2019-07-05 03:52:59.064071"], ["updated_at", "2019-07-05 03:52:59.064071"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mSuburb Create (0.4ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Enmore"], ["created_at", "2019-07-05 03:52:59.066945"], ["updated_at", "2019-07-05 03:52:59.066945"]]
+  ↳ db/seeds.rb:25
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:26
+  [1m[36mSuburb Create (0.4ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Erskineville"], ["created_at", "2019-07-05 03:52:59.069842"], ["updated_at", "2019-07-05 03:52:59.069842"]]
+  ↳ db/seeds.rb:26
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:26
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:27
+  [1m[36mSuburb Create (0.2ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Woolloomooloo"], ["created_at", "2019-07-05 03:52:59.072217"], ["updated_at", "2019-07-05 03:52:59.072217"]]
+  ↳ db/seeds.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:27
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Create (0.3ms)[0m  [1m[32mINSERT INTO "suburbs" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Potts Point"], ["created_at", "2019-07-05 03:52:59.074133"], ["updated_at", "2019-07-05 03:52:59.074133"]]
+  ↳ db/seeds.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:28
+  [1m[36mSuburb Load (0.2ms)[0m  [1m[34mSELECT "suburbs".* FROM "suburbs"[0m
+  ↳ db/seeds.rb:30
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:32
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 21]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 22]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 23]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:32
+  [1m[36mComment Destroy (0.3ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = $1[0m  [["id", 24]]
+  ↳ db/seeds.rb:32
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:32
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:36
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Great vegan options"], ["user_id", 34], ["suburb_id", 31], ["created_at", "2019-07-05 03:52:59.119617"], ["updated_at", "2019-07-05 03:52:59.119617"]]
+  ↳ db/seeds.rb:36
+  [1m[35m (20.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:36
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:37
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Quick walk to Newtown but quieter and cheaper"], ["user_id", 34], ["suburb_id", 33], ["created_at", "2019-07-05 03:52:59.143138"], ["updated_at", "2019-07-05 03:52:59.143138"]]
+  ↳ db/seeds.rb:37
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:37
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:38
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lively nightlife"], ["user_id", 35], ["suburb_id", 31], ["created_at", "2019-07-05 03:52:59.146501"], ["updated_at", "2019-07-05 03:52:59.146501"]]
+  ↳ db/seeds.rb:38
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:39
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Lovely community gardens. Would highly recommend for young families"], ["user_id", 36], ["suburb_id", 33], ["created_at", "2019-07-05 03:52:59.149696"], ["updated_at", "2019-07-05 03:52:59.149696"]]
+  ↳ db/seeds.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:40
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Being able to park my yacht in infront my home, means that I get to spend more time on my yacht"], ["user_id", 36], ["suburb_id", 34], ["created_at", "2019-07-05 03:52:59.152394"], ["updated_at", "2019-07-05 03:52:59.152394"]]
+  ↳ db/seeds.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:40
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "user_id", "suburb_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["comment", "Awesome nightlife and multicultural eateries"], ["user_id", 37], ["suburb_id", 35], ["created_at", "2019-07-05 03:52:59.155597"], ["updated_at", "2019-07-05 03:52:59.155597"]]
+  ↳ db/seeds.rb:41
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:41
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments"[0m
+  ↳ db/seeds.rb:43
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 11]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 12]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 13]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 14]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 15]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:47
+  [1m[36mListing::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings_users" WHERE "listings_users"."listing_id" = $1[0m  [["listing_id", 16]]
+  ↳ db/seeds.rb:47
+  [1m[36mListing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:47
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:49
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Luxuriously large terrace promising remarkably tranquil Inner City living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015397760_1_1_190625_021110-w4567-h3045"], ["address", "Terrace 7/157 St Johns Road, Glebe"], ["latitude", -33.88231], ["longitude", 151.18335], ["created_at", "2019-07-05 03:52:59.213616"], ["updated_at", "2019-07-05 03:52:59.213616"], ["domain_id", 2015397760]]
+  ↳ db/seeds.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:49
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:51
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Flawless executive design, extraordinary indoor and outdoor living"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015324886_1_1_190604_121715-w5189-h3890"], ["address", "96 Hereford Street, Glebe"], ["latitude", -33.8805351], ["longitude", 151.182358], ["created_at", "2019-07-05 03:52:59.215558"], ["updated_at", "2019-07-05 03:52:59.215558"], ["domain_id", 2015324886]]
+  ↳ db/seeds.rb:51
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:51
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:53
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Two Dwellings, Double Income Opportunity"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015297723_2_pi_190522_062426-w1024-h683"], ["address", "287 Broadway, Glebe"], ["latitude", -33.8845177], ["longitude", 151.192062], ["created_at", "2019-07-05 03:52:59.217275"], ["updated_at", "2019-07-05 03:52:59.217275"], ["domain_id", 2015297723]]
+  ↳ db/seeds.rb:53
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:53
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:55
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "A CITYSIDE TREASURE WITH CAPTIVATING VIEWS"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2015029918_1_1_190321_122835-w3000-h2000"], ["address", "29 Avona Avenue, Glebe"], ["latitude", -33.8744965], ["longitude", 151.18457], ["created_at", "2019-07-05 03:52:59.218957"], ["updated_at", "2019-07-05 03:52:59.218957"], ["domain_id", 2015029918]]
+  ↳ db/seeds.rb:55
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:55
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("headline", "image", "address", "latitude", "longitude", "created_at", "updated_at", "domain_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["headline", "Modern Architectural Terrace Home In Best Location, Close to Everything You Need"], ["image", "https://bucket-api.domain.com.au/v1/bucket/image/2014551371_16_pi_180810_075553-w2400-h1601"], ["address", "T24 Wentworth Street, Glebe"], ["latitude", -33.8797646], ["longitude", 151.192871], ["created_at", "2019-07-05 03:52:59.220896"], ["updated_at", "2019-07-05 03:52:59.220896"], ["domain_id", 2014551371]]
+  ↳ db/seeds.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:57
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:59
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 34], ["listing_id", 17]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:62
+  [1m[36mUser::HABTM_Listings Create (0.4ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 34], ["listing_id", 18]]
+  ↳ db/seeds.rb:62
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:62
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.5ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 35], ["listing_id", 17]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 35], ["listing_id", 18]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:63
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 35], ["listing_id", 19]]
+  ↳ db/seeds.rb:63
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:63
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 36], ["listing_id", 17]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 36], ["listing_id", 18]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 36], ["listing_id", 19]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:64
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 36], ["listing_id", 20]]
+  ↳ db/seeds.rb:64
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:64
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 17]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.3ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 18]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 19]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 20]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:65
+  [1m[36mUser::HABTM_Listings Create (0.2ms)[0m  [1m[32mINSERT INTO "listings_users" ("user_id", "listing_id") VALUES ($1, $2) RETURNING "id"[0m  [["user_id", 37], ["listing_id", 21]]
+  ↳ db/seeds.rb:65
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:65
+  [1m[36mToken Load (0.5ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:68
+  [1m[36mToken Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tokens" WHERE "tokens"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:68
+  [1m[35m (39.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:68
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Create (0.8ms)[0m  [1m[32mINSERT INTO "tokens" ("current_token", "created_at", "updated_at", "expiry_time") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["current_token", "1"], ["created_at", "2019-07-05 03:52:59.308385"], ["updated_at", "2019-07-05 03:52:59.308385"], ["expiry_time", "2019-07-05 03:52:59.307760"]]
+  ↳ db/seeds.rb:70
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:70
+  [1m[36mToken Load (0.2ms)[0m  [1m[34mSELECT "tokens".* FROM "tokens"[0m
+  ↳ db/seeds.rb:72
+Started POST "/user_token" for ::1 at 2019-07-05 13:54:02 +1000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UserTokenController#create as HTML
+  Parameters: {"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}, "user_token"=>{"auth"=>{"email"=>"lc@ga.co", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "lc@ga.co"], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Completed 201 Created in 276ms (Views: 0.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 13:54:02 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 37]]
+  ↳ app/controllers/wishlists_controller.rb:26
+Completed 200 OK in 34ms (Views: 23.8ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 13:57:24 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mCACHE Token Load (0.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:33
+  [1m[36mToken Update All (1.4ms)[0m  [1m[33mUPDATE "tokens" SET "current_token" = '4d8088bb12943a96e48b8f4e140d03e4', "expiry_time" = '2019-07-05 15:57:24.385176'[0m
+  ↳ app/models/token.rb:53
+Completed 200 OK in 189ms (Views: 0.2ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 13:58:01 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.7ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mCACHE Token Load (0.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:33
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/domain_token" for ::1 at 2019-07-05 13:58:11 +1000
+Processing by TokenController#show as HTML
+  [1m[36mToken Load (0.3ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:30
+  [1m[36mCACHE Token Load (0.0ms)[0m  [1m[34mSELECT  "tokens".* FROM "tokens" ORDER BY "tokens"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/token.rb:33
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 13:58:21 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 37]]
+  ↳ app/controllers/wishlists_controller.rb:26
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/wishlists" for ::1 at 2019-07-05 14:13:21 +1000
+Processing by WishlistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ /Users/amandachau/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mListing Load (43.3ms)[0m  [1m[34mSELECT "listings".* FROM "listings" INNER JOIN "listings_users" ON "listings"."id" = "listings_users"."listing_id" WHERE "listings_users"."user_id" = $1[0m  [["user_id", 37]]
+  ↳ app/controllers/wishlists_controller.rb:26
+Completed 200 OK in 49ms (Views: 3.7ms | ActiveRecord: 43.9ms)
+
+
