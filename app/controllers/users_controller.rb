@@ -12,14 +12,27 @@ class UsersController < ApplicationController
     # user = User.create
     # p params[:name]
 
-    newUser = User.create name: params[:name], email: params[:email], password: params[:password]
+    newUser = User.create user_params
+    puts "NEW USER"
+    p newUser
 
-    # if newUser.persisted?
-    #
-    #   render json: {created: true}
-    #
-    # end
+    # name: params[:name], email: params[:email], password: params[:password]
 
+    if newUser.persisted?
+    # this is not that necessary
+      puts "========================= SUCCESS "
+      render json: {created: true}
+    else
+    # status 422 means it will go to .catch errors
+      puts "---------------- FAIL "
+      render json: { errors: newUser.errors.full_messages, }, status: 422
+
+    end
+
+  end
+
+  def ajax_test
+    render json: Listing.all
   end
 
   private

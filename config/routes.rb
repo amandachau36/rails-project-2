@@ -12,5 +12,7 @@ Rails.application.routes.draw do
 
   post '/user' => 'users#create'
 
+  get '/ajaxtest' => 'users#ajax_test'
+
   # resources :wishlists
 end

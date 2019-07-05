@@ -58,3 +58,7 @@ gem 'knock'
 gem 'rack-cors'
 
 gem 'httparty'
+
+group :production do
+  gem 'rails_12factor'
+end
