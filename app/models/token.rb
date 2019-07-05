@@ -35,7 +35,7 @@ class Token < ApplicationRecord
     current_time = Time.now
 
 
-
+    # we seed Token current_token as 1 originally
     if t == '1' || expiry < current_time
       puts 'Token is empty'
       get_token = Token.token_request_from_domain
