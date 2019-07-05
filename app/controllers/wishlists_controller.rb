@@ -2,6 +2,8 @@ class WishlistsController < ApplicationController
   before_action :authenticate_user
   skip_before_action :verify_authenticity_token
 
+  # Checks if user already has listing in their wishlist
+  # If not, creates a listing & adds adds association to the user
   def add
 
     # checkIfInDatabase = Listing.find_by(domain_id: params[:domainId])
@@ -9,17 +11,11 @@ class WishlistsController < ApplicationController
     puts checkIfInDatabase
 
     if checkIfInDatabase.nil?
-
       listing = Listing.create headline:params[:headline], image:params[:image], address:params[:address], latitude: params[:latitude], longitude: params[:longitude], domain_id: params[:domainId]
-
       puts 'current_user is:', current_user
-
       current_user.listings << listing
-
     else
-
       puts "This Property is already in the database "
-
     end
 
   end
