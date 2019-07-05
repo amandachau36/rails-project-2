@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
   post '/wishlists' => 'wishlists#add'
 
+  post '/user' => 'users#create'
+
   # resources :wishlists
 end
