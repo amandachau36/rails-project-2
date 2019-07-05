@@ -67,7 +67,8 @@ u4.listings << l1 << l2 << l3 << l4 << l5
 
 Token.destroy_all
 puts "seeding Token"
-t1 = Token.create current_token: "1"
+t1 = Token.create current_token: "1", expiry_time: Time.now #Time.strptime("2019-07-05 10:39:52 AM +1000
+# ","%Y-%m-%d %r %z")
 puts "#{Token.all.length} Token have been created"
 
 

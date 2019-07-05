@@ -30,14 +30,29 @@ class Token < ApplicationRecord
     t = Token.last.current_token
     puts 't is:', t
 
-    if t == '1'
+    expiry = Token.last.expiry_time
+    puts 'the time to expiry before if is: ', expiry
+    current_time = Time.now
+
+
+
+    if t == '1' || expiry < current_time
       puts 'Token is empty'
       get_token = Token.token_request_from_domain
       t = get_token["access_token"]
+      expiry = get_token['expires_in']
+      puts 'token expires in: ', expiry
+      tokenWillExpire = Time.now + expiry
+      # tokenWillExpire += expiry
+      puts 'Time This Token will expire: ', tokenWillExpire
+
+      puts 'Time This Token before update: ', tokenWillExpire
+
+      # strTokenEx = tokenWillExpire.strftime("%Y-%m-%d %r %z")
+      # Update the model with the token now
+      Token.update_all(current_token: t, expiry_time: tokenWillExpire) #Time.strptime(strTokenEx,"%Y-%m-%d %r %z") )
     end
 
-    # Update the model with the token now
-    Token.update_all(current_token: t)
 
     puts "the token is: ", t
     return t
