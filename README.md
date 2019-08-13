@@ -2,13 +2,17 @@
 # Find Homes
 
 #### Search by drawing a polygon on the map or by suburb
-<img alt="map" src="/app/assets/images/map.png" width="300px"> <img alt="search" src="/app/assets/images/search.png" width="300px">
-
+<p float="left">
+<img alt="map" src="/app/assets/images/map.png" width="350px">
+<img alt="search" src="/app/assets/images/search.png" width="350px">
+</p>
 #### View your wishlist (mobile responsive)
-<img alt="wishlist" src="/app/assets/images/wish_list.png" width="300px"> <img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="300px">
+<p float="left">
+<img alt="wishlist" src="/app/assets/images/wish_list.png" width="350px"> <img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="200px">
+</p>
 
 #### View property details and add the property to your wishlist!  
-<img alt="show_page" src="/app/assets/images/show_page.png" width="300px">
+<img alt="show_page" src="/app/assets/images/show_page.png" width="350px">
 
 **Team Members:**
 * Josh Parry https://github.com/parryjos1
