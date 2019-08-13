@@ -1,7 +1,18 @@
-# README
-
 
 # Find Homes
+
+#### Search by drawing a polygon on the map or by suburb
+<img alt="map" src="/app/assets/images/map.png" width="300px">
+
+<img alt="search" src="/app/assets/images/search.png" width="300px">
+
+#### View your wishlist (mobile responsive)
+<img alt="wishlist" src="/app/assets/images/wish_list.png" width="300px">
+
+<img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="300px">
+
+#### View property details and add the property to your wishlist!  
+<img alt="show_page" src="/app/assets/images/show_page.png" width="300px">
 
 **Team Members:**
 * Josh Parry https://github.com/parryjos1
@@ -25,25 +36,29 @@
 * User authentication with JSON Web Tokens (JWT)   
 * Logged-in users can add and delete properties from their search to their wish lists
 * The show page for properties is always up-to-date with the Domain API - only a small subset of data about each saved property is stored in the database and a new axios request is made for the show page.
+* Design is (mostly) responsive!!
 
 
 **Backend Tech used**
 * Ruby v2.6.3
 * Ruby on Rails
 * Gems: pry-rails, knock, bcrypt, rails 12 factor, rack-cors, httparty
-* API: Domain API https://developer.domain.com.au
-* OAuth
-* JWT
+* Domain API https://developer.domain.com.au (OAuth)
+* JWT for authentication
+* Deployed to Heroku
+
 
 **Frontend Tech used**
 * JavaScript
 * React
 * NPM packages: axios, google-map-react, react-router-dom, gh-pages
-* API: Google Maps Api    
-* HTML
-* CSS
+* Google Maps Api    
+* HTML/CSS
+* Deployed to GH pages
+
 
 **List of bugs**
 * Error may occur if you draw the search area too slowly on Google Maps
 * Search results will not be saved if you navigate backwards from the show page
-* Design is not responsive
+* Page refresh required for a new search
+* ADD TO WISHLIST button appears even when the property is already on your wishlist
