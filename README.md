@@ -2,14 +2,10 @@
 # Find Homes
 
 #### Search by drawing a polygon on the map or by suburb
-<img alt="map" src="/app/assets/images/map.png" width="300px">
-
-<img alt="search" src="/app/assets/images/search.png" width="300px">
+<img alt="map" src="/app/assets/images/map.png" width="300px"> <img alt="search" src="/app/assets/images/search.png" width="300px">
 
 #### View your wishlist (mobile responsive)
-<img alt="wishlist" src="/app/assets/images/wish_list.png" width="300px">
-
-<img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="300px">
+<img alt="wishlist" src="/app/assets/images/wish_list.png" width="300px"> <img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="300px">
 
 #### View property details and add the property to your wishlist!  
 <img alt="show_page" src="/app/assets/images/show_page.png" width="300px">
