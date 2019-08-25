@@ -6,7 +6,8 @@
 <img alt="map" src="/app/assets/images/map.png" width="350px">
 <img alt="search" src="/app/assets/images/search.png" width="350px">
 </p>
-#### View your wishlist (mobile responsive)
+
+#### View your wishlist - mobile responsive
 <p float="left">
 <img alt="wishlist" src="/app/assets/images/wish_list.png" width="350px"> <img alt="mobile" src="/app/assets/images/mobile-responsive.png" width="200px">
 </p>
