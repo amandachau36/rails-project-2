@@ -59,6 +59,8 @@ gem 'rack-cors'
 
 gem 'httparty'
 
+gem "nokogiri", ">= 1.10.4"
+
 group :production do
   gem 'rails_12factor'
 end
